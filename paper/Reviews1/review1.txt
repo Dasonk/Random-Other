@@ -1,0 +1,186 @@
+View Review
+
+Review by: Reviewer #1
+
+Review date: Apr 29 2011 09:20 AM PDT
+
+The review:
+
+Basically, the paper discusses an effort to expose juniors/seniors and graduate
+students to large data in statistical computing courses. The authors use a
+database to hold large datasets and provide the students with access to the
+database via a GUI for R that they wrote. The GUI is the primary focus of the
+paper. The paper goes on to analyze and interpret evaluations of the GUI from
+the students.
+The work is fine and may be useful to some instructors. However, I don't think
+it is very compelling from a pedagogical perspective or a general description
+of, or introduction to, technology. As a result, I don't think it is appropriate
+for TISE and recommend rejecting it. I would suggest that the paper be shortened
+(by omitting the student evaluation) and submitted to the R Journal. However I
+think the GUI is too simplistic to be of much use and not necessarily
+appropriate for the R Journal. I am happy to re-review this if the authors can
+make a compelling intellectual argument for the pedagogical benefits of the
+approach and make the GUI significantly more general.
+The premises of the paper seems to be
+  a) it is important to see large data,
+  b) a GUI is necessary to make this easy. I agree with the first premise and
+     applaud the authors for introducing this topic into their stat. computing
+     course(s). I don't buy the second premise. A GUI can be useful in
+     introductory classes where we want to hide all the computational details.
+     But this paper is not addressing intro. stats classes but students more
+     advanced in their studies. (The paper does take a very long time to clearly
+     identify the type of students in question.) The students are people taking
+     stat. computing courses. There is a merging of two concepts - a) large
+     data, and b) accessing it through databases. This is one of the places
+     where the paper falls down I believe. It is using the database system
+     merely as a way to access large data but not leveraging or supporting any
+     of the real aspects of a database, e.g. joins. So the paper is merely
+     indicating to students that one can access large data from,
+b.a., R. That's a useful lesson, but it can be taught in many different ways
+    which are more interesting and valuable pedagogically. Furthermore, one can
+    work with large datasets in SAS and use lots of interesting statistical
+    methodology on that large data. Similarly, one could hide all of the
+    database concepts and details. Several ways come to mind that lead to the
+    student find out about the existence of richer ways of dealing with large
+    data and/or databases. a) using bigmemory or external files or sqldf or
+    RSQLite, b) using classes in R to represent SQL tables and then having
+    methods for basic statistical operations such as mean, sd, cor, etc. c)
+    using overloaded operators in R so that an expression such as dbTable[ (var1
+    < 10 & var2 > 20) | var3 %in% c("Jan", "Feb",
+    "Mar"), ] would be transformed under the covers into an SQL query
+    and executed. dbTable would be the table in the database. This is a richer
+    approach as it supports the use of variables in different tables and hence
+    joins. Furthermore, it builds on the familiar R syntax and concepts that the
+    students are expected to know. I vaguely recall that there was a functioning
+    prototype done for c) about 10 years ago as part of the Omegahat project. By
+    using the simplistic GUI to a database, there is a significant chance that
+    students will misunderstand the concepts and power of databases and think of
+    them in this very limited manner. I don't think the students need or are
+    well served by a GUI, specifically this GUI.
+  c)  This GUI is way too simplistic, currently only supporting simple logical
+      conditions, e.g. WHERE x < 10 AND y > 20 OR y < 10. It cannot
+      manage SQL queries that involve variables in two tables and so cannot do
+      basic joins
+      - the bread-and-butter of databases. While simple logical conditions are
+        powerful for working with single tables that are large, there are many
+        other commonly used features of SQL that one would need to understand in
+        "a real-life situation", as the paper lays claim to. As
+        result, the GUI is for very simple queries of a single table, the
+        equivalent of a very large data frame in R and the GUI is not, in my
+        opinion, the best way to achieve "transparent" access to such
+        data. Adding support for variables in different tables is not feasible
+        with the current UI design and is very challenging. So this GUI won't be
+        able to "get there from here".
+ ii) The GUI is fine if there are no errors, but if there are, the student
+     may well be more confused by the presence of the GUI and have to resort
+     to using SQL. Even logging in can result in an error and informative
+     error messages and guidance must be provided. This is a common flaw in
+     many ad hoc GUIs.
+iii) Most importantly, the GUI attempts to hide the intellectual concepts of a
+     database and working with large data. These are the lessons that the
+     students need to learn for the experience to be useful. These include the
+     efficient organization of a data in multiple tables indexed by a common
+     variable, different types of joins, working in blocks on the result set.
+     These are the general and intellectual concepts.
+The authors talk about the need for students "to be exposes to this real-
+life situation". There are other GUIs, mostly commercial and professional,
+for interacting with databases and constructing queries via visual programming
+languages, i.e. GUIs. The GUI described here is quite limited and intended for
+pedagogical use. As a result, the students are very, very unlikely to use this
+GUI in "real-life". Section 2 suggests that the GUI is appropriate
+because it is "similar to most statistical software introduced at the
+undergraduate level". Since the papers suggest using this in a stat.
+computing course, surely the students will be using a programming language and
+not just point-and-click GUIs. Secondly, this statement mixes all students
+together from intro. stat to majors. More focus on the type of students is
+needed. Furthermore, on page 3, the paper describes how to install and run the
+GUI using R commands. So the students do need to be able to use the R command-
+line. All of this indicates that there is some confusion in the pedagogical
+thinking and framework of the authors.
+Several of us do teach SQL in our undergraduate stat. computing courses (upper-
+division) along with other Domain Specific Languages (DSL) such as regular
+expressions, XML and XPath, and even regular programming languages such as
+Python or Perl (in graduate classes mostly). I have a strong belief (and
+experience) that the students gain more from doing things via a command-line
+language, ideally in R, that allows them to explore these DSLs in a manner in
+which they can reason about the language and its operations. The fact that
+students can provide "extensions to the query in form of a more general SQL
+query" by editing the generated SQL code in the Query tab is silly. If you
+haven't taught them to reason about SQL, how can they modify the SQL query in
+any reasonable manner with any knowledge of what they are expressing. The paper
+claims that the GUI facilitates "familiarizing the students with
+databases". I don't think this is true. They may become familiar with
+accessing a single large rectangular table which happens to be in a database.
+This could just as well be done via a password protected spreadsheet or NetCDF
+file and appear the same to the student.
+Statistical Computing has intellectual content and merit in our programs. We
+need to teach this rather than a bunch of how-to's or tricks. George Cobb put
+this well when he said it reminded him of the way Math depts. thought about
+statistics 35 years ago as just a set of how-to's based on real math. So I
+think this GUI and the claim to familiarize students with databases does a
+great disservice to the students. I strongly recommend trying to teach them the
+basics of SQL instead. If it is just exposure to large data, then evaluate
+different ways to do that without tieing it to databases and confusing
+implementation with pedagogy.
+One could make an argument that the GUI is a useful approach to dealing with non-
+majors taking upper-division stat. courses. I am not convinced it is a very
+compelling argument, but it may be more appropriate than for thos taking stat.
+computing courses. The work is fine and I hope the authors learned a great deal
+about GUIs and databases. It is great to have people exploring these more.
+However, this seems more at the level of an undergraduate or master's project
+for a class rather than academic-level research. Not all activity related to
+teaching is worthy of publication or even the best way to teach. The paper is
+not very clearly written and lacks clarity and precision in discussing R and
+database concepts. It talks about using "the GUI" without first
+describing/mentioning it in the text, only the title.
+Specifics:
+Why doesn't the dbConnector package initialize the GUI and remove the need for
+the student to call the DatabaseConnect function, since no parameters are
+needed? So does it live up to its pedagogical purposes? The type of students is
+alluded to at the end of the introduction, but not clarified until page 6. As a
+result, readers will still be unsure whether we are talking about upper-division
+or lower-division students. The authors talk about 400 and 500 level classes.
+These only make sense within their own university and suggest a certain
+insularity. The terms upper-division and lower-division would be much more
+meaningful. The tick labels on the graphical displays/plots in the paper are
+unreadable. References in the introduction related to AT&T and people from
+the Augsburg graphics group. The references are a little oblique and indirect
+and are "collaborators" or friends of the authors. The dataset (and a
+good one) was collated by a former student of the authors' department. It would
+be much better to have more widespread and appropriate references. References to
+the DBI package should be to the package and certainly not a mailing list!
+Section 2: One has to introduce RDBMS to the readers and define "normal
+form" more completely and correctly. This is a casual description that
+would confuse people who aren't already familiar with the concepts. The
+description of the browser dialog that mentions a data set rather than a table
+suggests confusion or very imprecise phrasing. Indeed, the concept of joining
+across tables (their "data sets") is missing in the entire paper. The
+description of the DBI package (page 2) is a little casual and incorrect. The
+package provides the generic architecture that is implemented by the database-
+specific packages such as RMySQL, ROracle, RSQLite, etc.
+The connection browser tries to make logging in easy for the student. But the
+student can easily forget the name of the database to be used or mis-type the
+server name or the user name or password. At the very least, after specifying
+the server, login and password, a menu of databases should be added by querying
+the server for the databases for which the user has privileges. I would imagine
+that if this were to be used by naieve students, one would want to customize
+this so that the defaults were set to the specifics for the course and as a
+result, one could by-pass this step altogether. So either the students need more
+help or they are able to master following command line instructions. There is no
+discussion of error handling during the connection. The password should not be
+displayed as clear text. Use a password text entry widget. The GUI should
+display the schema for a table, i.e. the table listing the variables and their
+types. This would improve the pedagogical nature of the GUI, making the student
+aware of the strongly typed nature of the DBMS With the "Save to R"
+check box, is the result set really save to a "data file name in R" or
+should this be correctly stated as a variable name? Personally, I find the
+expectation of the student using the GUI to access the data and then going back
+to the R prompt and work with the R command-line to use that data a little
+contradictory. Either they know how to use R and don't need the GUI (and use
+some R language mechanisms to access the database transparently) or they need
+the GUI and so cannot be expected to use R in which case the GUI should do a
+great deal more.
+The student evaluations are a nice addition, but of course there is the
+possibility of bias as the GUIs authors are the instructors. Furthermore, I am
+not sure the questions asked of the students do tell us about the effectiveness
+of the mode of pedagogy, i.e. the GUI.
