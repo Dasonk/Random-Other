@@ -1,0 +1,95 @@
+basedir <- "~/RA/PPDK"
+datadir <- paste(basedir, "/PPDK_lw/ReducedData", sep = "")
+
+# Read in full data and detect which genes have any expression
+fulldat <- read.csv(paste(basedir, "/PPDK_lw/FullData.csv", sep = ""), row.names = 1, header = T)
+id <- apply(fulldat, 1, function(x){max(x) > 0})
+
+## Load the rates
+setwd(basedir)
+rates <- read.csv("NCRrates.csv", header = TRUE)
+rownames(rates) <- rates[,1]
+
+## Get a sample file
+setwd(datadir)
+files <- dir(datadir)
+j <- read.csv(files[1], header = TRUE)
+
+## Preallocate the pvalue matrix
+n <- dim(j)[1]
+m <- length(files)
+pvals <- matrix(nrow = n, ncol = m)
+rownames(pvals) <- rownames(fulldat)
+
+getName <- function(x){
+    y <- strsplit(gsub(".csv", "", x), "_")[[1]]
+    trt <- paste(substr(y[1], 1, 2), y[2], y[3], sep = "")
+    return(trt)
+
+    #rep <- substr(y[1], 3, 3)
+    #return(c(trt, rep))
+
+    #y <- c(light = substr(y[1], 1, 2), type= y[2], loc = y[3], rep = substr(y[1], 3, 3))
+    #y["trt"] = paste(y[1:3], collapse = "")
+    #return(y)
+}
+
+## Get treatments
+trts <- sapply(strsplit(gsub(".csv", "", files), "_"), function(x){paste(substr(x[1], 1, 2), x[2], x[3], sep = "")})
+
+
+## For each of the files...
+for(i in seq(files)){
+    cat(i, "/", m, format(Sys.time()),"\n")
+    flush.console()
+
+    trt <- gsub(".csv", "", files[i])
+    j <- read.csv(files[i], header = TRUE)
+    rate <- rates[trt, "RATE"]
+    ## Find expected value
+    lambdas <- rate * j[,"LENGTH"]
+
+    ## Subtract 1 to get the true tail..
+    pvals[,i] <- ppois(j[,"COVERAGE"] - 1, lambdas, lower.tail = FALSE)
+}
+
+# Only consider rows with at least one read
+pvals <- pvals[id, ]
+
+## ALARM LETS YOU KNOW YOU'RE DONE
+## for(i in 1:10){cat("\a");Sys.sleep(.5)}
+
+cutoffs <- c(.0001, .001, .01, .05, .1, .2, .5)
+## Calculate qvalues using procedure of Benjamini and Hochberg
+qvals <- apply(pvals, 2, function(x){p.adjust(x, method = "BH")})
+rownames(qvals) <- rownames(pvals)
+
+## Using p-values compared to the cutoffs
+#j <- sapply(cutoffs,
+#            function(cut){
+#                mean(apply(pvals, 1,
+#                           function(x){!all(x > cut)}))})
+#names(j) <- cutoffs
+
+
+### Look at the max q-value for each treatment
+maxq <- t(apply(qvals, 1, function(x){tapply(x, trts, max)}))
+
+
+
+## Using q-values compared to the cutoffs
+## This checks for at least one treatment that has
+## the max q-value above the cutoff
+k <- sapply(cutoffs,
+            function(cut){
+                mean(apply(maxq, 1,
+                           function(x){!all(x > cut)}))})
+names(k) <- cutoffs
+
+siggenes <- apply(maxq, 1, function(x){min(x) <= .05})
+
+tmp <- names(siggenes)[siggenes]
+
+sigdat <- fulldat[tmp,]
+
+write.csv(sigdat, file = paste(basedir, "/PPDK_lw/SigDataPPDK.csv", sep = ""))
