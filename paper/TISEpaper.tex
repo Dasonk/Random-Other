@@ -45,9 +45,9 @@ A first step toward this goal is to introduce and adequately facilitate the use 
 \section{Database and Data Example}
 
 We are using the open-source relational database management system MySQL \citep{mysql} for %efficient 
-storage and manipulation of the data. To increase efficiency, data are often stored in normal form \citep{normalform:1983}, i.e. a large data set is broken apart into smaller  tables, such that duplicative entries are avoided. While splitting the data results in  more efficient storage, this imposes an additional technical hindrance due to the now non-rectangular form of the data. Further, any data retrieval from the database requires knowledge of the Structured Query Language (SQL) which, typically, is not part of the standard undergraduate or graduate degree curriculum for students in statistics or any related sciences. Additionally,  many students perceive working with databases as intimidating. With the graphical user interface, a gentler and more paced introduction to databases and SQL is possible due to the GUI's ease of use.  The user can access any of the GUI's functions by ``point and click," similar to most statistical software introduced at the undergraduate level and does not require the acquisition of a new programming language.
+storage and manipulation of the data. To increase efficiency, data are often stored in normal form \citep{normalform:1983}, i.e. a large data set is broken apart into smaller  tables, such that duplicative entries are avoided. While splitting the data results in  more efficient storage, this imposes an additional technical hindrance due to the now non-rectangular form of the data. Further, any data retrieval from the database requires knowledge of the Structured Query Language (SQL) which, typically, is not part of the standard undergraduate or graduate degree curriculum for students in statistics or any related sciences. Additionally,  many students perceive working with databases as intimidating. With the use of a graphical user interface, a gentler and more paced introduction to databases and SQL is possible due to the ease of use of a GUI over more complex (but powerful) methods.  The user can access any of the GUI's functions by ``point and click," similar to most statistical software introduced at the undergraduate level and does not require the acquisition of a new programming language.  The knowledge of SQL is a most desired trait for those working with large data.
 
-There are many packages out there to deal with SQL.  Most require a working knowledge of SQL/MySQL to get started though and thus they are inadequate for the needs of a first time user just trying to explore databases and get a gentle introduction to how to get the desired data.  One of the most well known is the MySQL Workbench provided by Oracle when the MySQL client is installed.  For those experience with MySQL this can provide a visually pleasing environment to send queries and save the requested data to an external file.  It doesn't provide a simplified way to create a query while learning MySQL though.  Another tool that provides a good interface for creating a query using SQL is SAS Enterprise Guide.  With Enterprise Guide you do get a fairly intuitive way to subset your data and join tables.  However, you must have access to SAS Enterprise Guide which is not free.  Even then it doesn't show you the generated code by default and the code it does generate is for PROC SQL.  It is possible to connect to external databases with Enterprise Guide but that isn't a very easy task to accomplish.  Within R there are the RMySQL \citep{rmysql}, DBI \citep{dbi}, and RODBC \citep{rodbc} packages (and there are probably a couple more).  These are quite powerful packages that allow you to connect to databases, send SQL statements, and get the results into R.  Once again, though, they aren't as explorable and instructional as would be desired for a first time user.  The GUI we provide uses the RMySQL package but gives a much nicer interface for a first time user.  It creates the query for the user through a point and click interface but also shows the user the created query so they can learn the language while they use it.  The user is also provided a full history of the queries that were created while they are using the GUI so they can replicate the queries made in R without having to resort to the GUI every time they want to grab the same dataset.  In doing this the user learns to use MySQL.
+There are many packages out there to deal with SQL.  Most require a working knowledge of SQL/MySQL to get started though and thus they are inadequate for the needs of a first time user just trying to explore databases and get a gentle introduction to how to get the desired data.  One of the most well known packages is the MySQL Workbench provided by Oracle when the MySQL client is installed.  For thosewith knowledge of MySQL this can provide a visually pleasing environment to send queries and save the requested data to an external file.  It doesn't provide a simplified way to create a query while learning MySQL though.  Another tool that provides a good interface for creating a query using SQL is SAS Enterprise Guide.  With Enterprise Guide you do get a fairly intuitive way to subset your data and join tables.  However, you must have access to SAS Enterprise Guide which is not free.  Even then it doesn't show you the generated code by default and the code it does generate is for PROC SQL.  It is possible to connect to external databases with Enterprise Guide but that isn't a trivial task.  Within R there are the RMySQL \citep{rmysql}, DBI \citep{dbi}, and RODBC \citep{rodbc} packages (and there are probably a couple more).  These are quite powerful packages that allow you to connect to databases, send SQL statements, and get the results into R.  Once again, though, they aren't as explorable and instructional as would be desired for a first time user.  The GUI we provide uses the RMySQL package but gives a much nicer interface for a first time user.  It creates the query for the user through a point and click interface but also shows the user the created query so they can learn the language while they use it.  The user is also provided a full history of the queries that were created while they are using the GUI so they can replicate the queries made in R without having to resort to the GUI every time they want to grab the same dataset.  In doing this the user learns to use MySQL.
 
 To illustrate the use of the GUI, we chose data used in the 2009 American Statistical
 Association (ASA) Data Exposition \citep{dataexpo, dataexpourl}. These data consist of flight arrival and departure details for all commercial flights within the U.\! S.\! between October 1987 and 2008, yielding more than 120 million data records and taking up 12 gigabytes of hard drive storage uncompressed, each record corresponding to an individual flight with data on 29 different variables. 
@@ -63,13 +63,13 @@ browser (see Figures \ref{lineviewer}  to \ref{dbquery}). Communication with the
 To connect to the GUI, installation and loading of the package {\tt dbConnector} is required. This can be done by submitting the following commands in {\tt R}
 \vspace{-0.5cm}
 \begin{verbatim}
-install.packages("dbConnector")
-library(dbConnector)
+install.packages("dbConnectGUI")
+library(dbConnectGUI)
 \end{verbatim} \vspace{-0.5cm}
 
 Running the command \vspace{-0.5cm}
 \begin{verbatim}
-DatabaseConnect()
+dbConnectGUI()
 \end{verbatim} \vspace{-0.5cm}
 
 displays the connection browser as shown in Figure  \ref{dbconnect} allowing the user to establish a connection to the database by choosing server, user, and the database itself. While the GUI allows to connect to any MySQL database, the default information automatically connects to the ASA Expo `09 data provided by the server at Iowa State University. \\[.25cm]
@@ -89,7 +89,7 @@ displays the connection browser as shown in Figure  \ref{dbconnect} allowing the
 
 %\vspace{.5cm}
 
-Selecting `Connect' establishes the connection to the database and opens up the main browser (Figures \ref{lineviewer} to \ref{dbquery}).  The main browser serves the following three main functions:
+Selecting `Connect' establishes the connection to the database and opens up the main browser (Figures \ref{lineviewer} to \ref{dbquery}) as long as there was no error in connecting.  If an error occured the user will get a popup telling the user the most likely cause for the connection error.  The main browser serves the following three main functions:
 \begin{enumerate}
 \item data display for easy and immediate verification of data entries, 
 \item data retrieval/database sub-setting to prepare the data for subsequent statistical analysis, 
@@ -102,7 +102,7 @@ The browser dialog consists of four tabs: the `Data Viewer,' the `Variable Brows
 
 The Data Viewer tab  (Figure \ref{lineviewer}) displays available information on the first five records of the selected data set (this is similar to the command {\tt head} in {\tt R}) providing an overview of the data and allowing students to familiarize with the available information.  
 
-The variable browser (not shown) lists all the variables corresponding to the selected data set as well as the data type of the variables in both the SQL and S language.  
+The variable browser (not shown) lists all the variables corresponding to the selected data set as well as the data type of the variables in both the SQL and R language.  
 
 
 \begin{figure}[h] %  figure placement: here, top, bottom, or page
@@ -184,7 +184,7 @@ The GUI facilitates multiple learning objectives:
 All or a subset of these learning objectives can be selected by the instructor depending on the background of the students and the available classroom time.\\
 Most students have no experience with databases (see student feedback section \ref{implement}) as at most universities and colleges the current training of students typically focuses on the use of statistical software packages such as SAS, JMP, Minitab or {\tt R}. All of these software packages are restricted to the use of data sets of manageable size. Furthermore, instructors tend to use data sets that are typically of small size consisting only of a few variables and a limited number of data records to optimally illustrate the statistical method under consideration.  Real-world data, however, is rarely available cleaned up this nicely and often tends to be much less tractable than data sets used in the classroom.   For this reason, we expect that in the majority of instances the primary learning objective will revolve around teaching students how to gain access to databases and how to subset data for further statistical analysis.
 
-For the purpose of introducing students to the database language SQL, the `Subsample' and `Query' tab do provide students with the opportunity to explore the structure of SQL step by step at a pace that can be individually adjusted to the students' needs. In particular, students can receive immediate feedback upon modifying an existing SQL query: the generation of a data table confirms that students submitted a legitimate SQL query. Additionally, instructors can provide students with the final sample size of the desired data subset or subset related summary statistics to verify whether students submitted the correct SQL query.      
+For the purpose of introducing students to the database language SQL, the `Subsample' and `Query' tab do provide students with the opportunity to explore the structure of SQL step by step at a pace that can be individually adjusted to the students' needs. In particular, students can receive immediate feedback upon modifying an existing SQL query: the generation of a data table confirms that students submitted a legitimate SQL query. Additionally, instructors can provide students with the final sample size of the desired data subset or subset related summary statistics to verify whether students submitted the correct SQL query.
 
 
 \section{Testing Usability of the GUI in the Classroom}
@@ -206,7 +206,7 @@ In order to assess usability the GUI was tried out with students at Iowa State U
       Undergraduate & 23 & 6 & 1 & 0 \\
       \bottomrule
    \end{tabular}
-   \caption{Overview of students participating in the usability study by course, status and area.}
+   \caption{Overview of students participating in the usability study by course, status, and area.}
    \label{fb-overview}
 \end{table}
 
@@ -320,7 +320,7 @@ Students' assessment of task difficulty
 To achieve a broad dissemination of the developed GUI, the database is accessible for public use and stored on a server of the Department of Statistics at Iowa State University. An accompanying webpage is available at \url{http://www.public.iastate.edu/~hofmann/vldb.html}.
 This webpage provides the following information and tools: 
 \begin{enumerate} 
-\item a link to the {\tt R} source code for the GUI - also available in form of the {\tt R} package {\tt dbConnector} available on CRAN, 
+\item a link to the {\tt R} source code for the GUI - also available in form of the {\tt R} package {\tt dbConnectGUI} available on CRAN, 
 \item information on accessing the SQL database for the `09 ASA Data Expo, 
 \item a detailed description of the data,  
 \item examples and sample analyses for classroom demonstration, 
@@ -333,6 +333,12 @@ Other databases that are currently available from the server at Iowa State Unive
 Once the GUI also supports random sampling, it can also be used as a data resource for instructors allowing, for example, to sample data sets individually for classes or students that will yield different numerical results in a statistical analysis without changing the context of the data or task, while at the same time allowing for an automatic assessment of correctness of answers.    
 
 We introduced the idea of a graphical user interface that allows an introduction of data sets into classroom that otherwise are too large in size to be managed by commonly used statistical software. We explained some of the technical and pedagogical aspects of the GUI and an extension of the GUI is currently under development. Although the GUI has been used successfully in the classroom a full implementation and evaluation of the GUI is still necessary and currently being prepared.
+
+\section{{Future Work}}
+
+The GUI as it is provides basic subsetting functionality which is a good start to introducing students to the SQL language.  The usability study provides evidence that the GUI was helpful in facilitating a new user's ability to learn and SQL and access databases (at least in a minimal way that functionality was provided for).  It is planned to add the ability to grab random samples from the database with the possibility of stratifying or selecting the random sample based on some subsampling criterion.  This will allow instructors to easily grab a different dataset for each student to create customized assignments or projects.  If an instructor combined the ability to grab nice random stratified subsets of a large database with a tool like Sweave or knitr \citet{knitr} the creation of customized assignments would be an accomplishable task.
+
+One of the main reasons to put databases in normal form \citet{normalform:1983} is to save space and provide the ability to grab only the relevent information.  However, this breaks up the data so that not all the interesting information about an observation is in one row of a database.  To get the data back into this form it would be required to perform a 'join' on different tables in the database.  This functionality is not yet part of the GUI and would be a most welcome addition.  This is being worked on and would require a more advanced layout and it is not trivial to make it easy to perform a join for a new user.  For the sake of introducing databases and SQL it was decided that not having this functionality was fine, however, for a more advanced user this is a desired feature.
 
 %\newpage
 \bibliography{references}

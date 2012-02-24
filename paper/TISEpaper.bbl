@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -92,5 +92,12 @@ Wickham H (2009).
 Wickham H (forthcoming).
 \newblock \enquote{ASA Data Exposition 2009.}
 \newblock \emph{Journal of Computational and Graphical Statistics}.
+
+\bibitem[{Xie(2012)}]{knitr}
+Xie Y (2012).
+\newblock \emph{knitr: A general-purpose package for dynamic report generation
+  in R}.
+\newblock R package version 0.2,
+  \urlprefix\url{http://CRAN.R-project.org/package=knitr}.
 
 \end{thebibliography}
