@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.19)  24 FEB 2012 10:49
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.19)  27 FEB 2012 13:20
 entering extended mode
 **C:/Users/dasonk/Random-Other/paper/TISEpaper.tex
 (C:/Users/dasonk/Random-Other/paper/TISEpaper.tex
@@ -427,6 +427,14 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
 {C:/Users/dasonk/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 50.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\omsaer.fd"
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+
 Underfull \vbox (badness 1748) has occurred while \output is active []
 
  [2]
@@ -439,14 +447,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/dbconnect-dialog.png, id=94, 402.50375pt x 195.73125pt>
+<images/dbconnect-dialog.png, id=95, 402.50375pt x 195.73125pt>
 File: images/dbconnect-dialog.png Graphic file (type png)
 
 <use images/dbconnect-dialog.png>
 Package pdftex.def Info: images/dbconnect-dialog.png used on input line 81.
 (pdftex.def)             Requested size: 216.81pt x 105.43047pt.
  [3]
-<images/db-lineviewer.png, id=116, 710.655pt x 303.1325pt>
+<images/db-lineviewer.png, id=117, 710.655pt x 303.1325pt>
 File: images/db-lineviewer.png Graphic file (type png)
 
 <use images/db-lineviewer.png>
@@ -458,14 +466,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-<images/db-sample.png, id=128, 760.8425pt x 302.12875pt>
+<images/db-sample.png, id=129, 760.8425pt x 302.12875pt>
 File: images/db-sample.png Graphic file (type png)
 
 <use images/db-sample.png>
 Package pdftex.def Info: images/db-sample.png used on input line 121.
 (pdftex.def)             Requested size: 289.07999pt x 114.79628pt.
 
-<images/db-query.png, id=133, 771.88374pt x 472.76625pt>
+<images/db-query.png, id=134, 771.88374pt x 472.76625pt>
 File: images/db-query.png Graphic file (type png)
 
 <use images/db-query.png>
@@ -476,48 +484,48 @@ Underfull \vbox (badness 4556) has occurred while \output is active []
 
  [5 <C:/Users/dasonk/Random-Other/paper/images/db-sample.png>] [6 <C:/Users/das
 onk/Random-Other/paper/images/db-query.png>] [7]
-<images/fb-question-9.pdf, id=165, 505.89pt x 505.89pt>
+<images/fb-question-9.pdf, id=166, 505.89pt x 505.89pt>
 File: images/fb-question-9.pdf Graphic file (type pdf)
 
 <use images/fb-question-9.pdf>
 Package pdftex.def Info: images/fb-question-9.pdf used on input line 220.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-question-10.pdf, id=166, 505.89pt x 505.89pt>
+<images/fb-question-10.pdf, id=167, 505.89pt x 505.89pt>
 File: images/fb-question-10.pdf Graphic file (type pdf)
 
 <use images/fb-question-10.pdf>
 Package pdftex.def Info: images/fb-question-10.pdf used on input line 221.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-question-11.pdf, id=167, 505.89pt x 505.89pt>
+<images/fb-question-11.pdf, id=168, 505.89pt x 505.89pt>
 File: images/fb-question-11.pdf Graphic file (type pdf)
 
 <use images/fb-question-11.pdf>
 Package pdftex.def Info: images/fb-question-11.pdf used on input line 222.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-legend2.pdf, id=168, 92.81375pt x 41.45438pt>
+<images/fb-legend2.pdf, id=169, 92.81375pt x 41.45438pt>
 File: images/fb-legend2.pdf Graphic file (type pdf)
 
 <use images/fb-legend2.pdf>
 Package pdftex.def Info: images/fb-legend2.pdf used on input line 224.
 (pdftex.def)             Requested size: 40.45296pt x 18.06792pt.
 
-<images/fb-importance.pdf, id=170, 505.89pt x 505.89pt>
+<images/fb-importance.pdf, id=171, 505.89pt x 505.89pt>
 File: images/fb-importance.pdf Graphic file (type pdf)
 
 <use images/fb-importance.pdf>
 Package pdftex.def Info: images/fb-importance.pdf used on input line 234.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-useful.pdf, id=171, 505.89pt x 505.89pt>
+<images/fb-useful.pdf, id=172, 505.89pt x 505.89pt>
 File: images/fb-useful.pdf Graphic file (type pdf)
  <use images/fb-useful.pdf>
 Package pdftex.def Info: images/fb-useful.pdf used on input line 235.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-legend.pdf, id=172, 97.8028pt x 281.67213pt>
+<images/fb-legend.pdf, id=173, 97.8028pt x 281.67213pt>
 File: images/fb-legend.pdf Graphic file (type pdf)
 
 <use images/fb-legend.pdf>
@@ -527,13 +535,13 @@ Package pdftex.def Info: images/fb-legend.pdf used on input line 236.
 onk/Random-Other/paper/images/fb-question-10.pdf> <C:/Users/dasonk/Random-Other
 /paper/images/fb-question-11.pdf> <C:/Users/dasonk/Random-Other/paper/images/fb
 -legend2.pdf>]
-<images/fb-before.pdf, id=486, 505.89pt x 505.89pt>
+<images/fb-before.pdf, id=487, 505.89pt x 505.89pt>
 File: images/fb-before.pdf Graphic file (type pdf)
  <use images/fb-before.pdf>
 Package pdftex.def Info: images/fb-before.pdf used on input line 248.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-after.pdf, id=487, 505.89pt x 505.89pt>
+<images/fb-after.pdf, id=488, 505.89pt x 505.89pt>
 File: images/fb-after.pdf Graphic file (type pdf)
  <use images/fb-after.pdf>
 Package pdftex.def Info: images/fb-after.pdf used on input line 249.
@@ -544,7 +552,7 @@ File: images/fb-legend.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/fb-legend.pdf used on input line 250.
 (pdftex.def)             Requested size: 50.18916pt x 144.54485pt.
 
-<images/fb-before-after.pdf, id=488, 505.89pt x 505.89pt>
+<images/fb-before-after.pdf, id=489, 505.89pt x 505.89pt>
 File: images/fb-before-after.pdf Graphic file (type pdf)
 
 <use images/fb-before-after.pdf>
@@ -577,23 +585,24 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7343 strings out of 494045
- 103915 string characters out of 3148383
+ 7361 strings out of 494045
+ 104219 string characters out of 3148383
  192548 words of memory out of 3000000
- 10411 multiletter control sequences out of 15000+200000
+ 10426 multiletter control sequences out of 15000+200000
  32904 words of font info for 75 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,10n,34p,2081b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,34p,2164b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb>
-Output written on TISEpaper.pdf (13 pages, 1230721 bytes).
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb>
+Output written on TISEpaper.pdf (13 pages, 1238730 bytes).
 PDF statistics:
- 1030 PDF objects out of 1200 (max. 8388607)
+ 1034 PDF objects out of 1200 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
