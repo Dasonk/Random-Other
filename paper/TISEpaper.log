@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.19)  27 FEB 2012 13:20
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.19)  27 FEB 2012 13:37
 entering extended mode
 **C:/Users/dasonk/Random-Other/paper/TISEpaper.tex
 (C:/Users/dasonk/Random-Other/paper/TISEpaper.tex
@@ -447,14 +447,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/dbconnect-dialog.png, id=95, 402.50375pt x 195.73125pt>
+<images/dbconnect-dialog.png, id=111, 402.50375pt x 195.73125pt>
 File: images/dbconnect-dialog.png Graphic file (type png)
 
 <use images/dbconnect-dialog.png>
 Package pdftex.def Info: images/dbconnect-dialog.png used on input line 81.
 (pdftex.def)             Requested size: 216.81pt x 105.43047pt.
  [3]
-<images/db-lineviewer.png, id=117, 710.655pt x 303.1325pt>
+<images/db-lineviewer.png, id=133, 710.655pt x 303.1325pt>
 File: images/db-lineviewer.png Graphic file (type png)
 
 <use images/db-lineviewer.png>
@@ -466,14 +466,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-<images/db-sample.png, id=129, 760.8425pt x 302.12875pt>
+<images/db-sample.png, id=145, 760.8425pt x 302.12875pt>
 File: images/db-sample.png Graphic file (type png)
 
 <use images/db-sample.png>
 Package pdftex.def Info: images/db-sample.png used on input line 121.
 (pdftex.def)             Requested size: 289.07999pt x 114.79628pt.
 
-<images/db-query.png, id=134, 771.88374pt x 472.76625pt>
+<images/db-query.png, id=150, 771.88374pt x 472.76625pt>
 File: images/db-query.png Graphic file (type png)
 
 <use images/db-query.png>
@@ -484,48 +484,48 @@ Underfull \vbox (badness 4556) has occurred while \output is active []
 
  [5 <C:/Users/dasonk/Random-Other/paper/images/db-sample.png>] [6 <C:/Users/das
 onk/Random-Other/paper/images/db-query.png>] [7]
-<images/fb-question-9.pdf, id=166, 505.89pt x 505.89pt>
+<images/fb-question-9.pdf, id=182, 505.89pt x 505.89pt>
 File: images/fb-question-9.pdf Graphic file (type pdf)
 
 <use images/fb-question-9.pdf>
 Package pdftex.def Info: images/fb-question-9.pdf used on input line 220.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-question-10.pdf, id=167, 505.89pt x 505.89pt>
+<images/fb-question-10.pdf, id=183, 505.89pt x 505.89pt>
 File: images/fb-question-10.pdf Graphic file (type pdf)
 
 <use images/fb-question-10.pdf>
 Package pdftex.def Info: images/fb-question-10.pdf used on input line 221.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-question-11.pdf, id=168, 505.89pt x 505.89pt>
+<images/fb-question-11.pdf, id=184, 505.89pt x 505.89pt>
 File: images/fb-question-11.pdf Graphic file (type pdf)
 
 <use images/fb-question-11.pdf>
 Package pdftex.def Info: images/fb-question-11.pdf used on input line 222.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-legend2.pdf, id=169, 92.81375pt x 41.45438pt>
+<images/fb-legend2.pdf, id=185, 92.81375pt x 41.45438pt>
 File: images/fb-legend2.pdf Graphic file (type pdf)
 
 <use images/fb-legend2.pdf>
 Package pdftex.def Info: images/fb-legend2.pdf used on input line 224.
 (pdftex.def)             Requested size: 40.45296pt x 18.06792pt.
 
-<images/fb-importance.pdf, id=171, 505.89pt x 505.89pt>
+<images/fb-importance.pdf, id=187, 505.89pt x 505.89pt>
 File: images/fb-importance.pdf Graphic file (type pdf)
 
 <use images/fb-importance.pdf>
 Package pdftex.def Info: images/fb-importance.pdf used on input line 234.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-useful.pdf, id=172, 505.89pt x 505.89pt>
+<images/fb-useful.pdf, id=188, 505.89pt x 505.89pt>
 File: images/fb-useful.pdf Graphic file (type pdf)
  <use images/fb-useful.pdf>
 Package pdftex.def Info: images/fb-useful.pdf used on input line 235.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-legend.pdf, id=173, 97.8028pt x 281.67213pt>
+<images/fb-legend.pdf, id=189, 97.8028pt x 281.67213pt>
 File: images/fb-legend.pdf Graphic file (type pdf)
 
 <use images/fb-legend.pdf>
@@ -535,13 +535,13 @@ Package pdftex.def Info: images/fb-legend.pdf used on input line 236.
 onk/Random-Other/paper/images/fb-question-10.pdf> <C:/Users/dasonk/Random-Other
 /paper/images/fb-question-11.pdf> <C:/Users/dasonk/Random-Other/paper/images/fb
 -legend2.pdf>]
-<images/fb-before.pdf, id=487, 505.89pt x 505.89pt>
+<images/fb-before.pdf, id=503, 505.89pt x 505.89pt>
 File: images/fb-before.pdf Graphic file (type pdf)
  <use images/fb-before.pdf>
 Package pdftex.def Info: images/fb-before.pdf used on input line 248.
 (pdftex.def)             Requested size: 144.54294pt x 144.54294pt.
 
-<images/fb-after.pdf, id=488, 505.89pt x 505.89pt>
+<images/fb-after.pdf, id=504, 505.89pt x 505.89pt>
 File: images/fb-after.pdf Graphic file (type pdf)
  <use images/fb-after.pdf>
 Package pdftex.def Info: images/fb-after.pdf used on input line 249.
@@ -552,7 +552,7 @@ File: images/fb-legend.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/fb-legend.pdf used on input line 250.
 (pdftex.def)             Requested size: 50.18916pt x 144.54485pt.
 
-<images/fb-before-after.pdf, id=489, 505.89pt x 505.89pt>
+<images/fb-before-after.pdf, id=505, 505.89pt x 505.89pt>
 File: images/fb-before-after.pdf Graphic file (type pdf)
 
 <use images/fb-before-after.pdf>
@@ -562,36 +562,564 @@ Package pdftex.def Info: images/fb-before-after.pdf used on input line 260.
 onk/Random-Other/paper/images/fb-useful.pdf> <C:/Users/dasonk/Random-Other/pape
 r/images/fb-legend.pdf> <C:/Users/dasonk/Random-Other/paper/images/fb-before.pd
 f> <C:/Users/dasonk/Random-Other/paper/images/fb-after.pdf>] [10 <C:/Users/daso
-nk/Random-Other/paper/images/fb-before-after.pdf>] [11] (C:\Users\dasonk\Random
--Other\paper\TISEpaper.bbl
+nk/Random-Other/paper/images/fb-before-after.pdf>] [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Overfull \hbox (69.59612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The paper raises an important issue – that while interes
+ting and increasingly available, the[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 complexity and sometimes sheer size of large data sets mak
+es them difficult to deal with[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 Unfortunately, rather than pursuing the implications of ho
+w to deal with such data sets[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 broadly, the paper focuses on the very narrow solution of 
+extracting samples from large[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 data sets to address computational (but not conceptual) co
+mplexity, and then explores a[] 
+ []
+
+
+Overfull \hbox (63.85835pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 specific graphical user interface for doing so. In quickly
+ moving to the GUI “solution”,[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the paper loses sight of the much more interesting larger 
+issues, and presents itself more[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 as a research report on a small technical innovation rathe
+r than as a position paper. As[] 
+ []
+
+
+Overfull \hbox (12.21834pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 such, many of the guiding questions suggested for review o
+f a position paper are not[] 
+ []
+
+
+Overfull \hbox (6.48056pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 After correspondence with the TISE editor, we’ve decided
+ to review the paper as a[] 
+ []
+
+
+Overfull \hbox (52.38278pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 Technology Innovation rather than as a Position Paper. Tho
+ugh this doesn’t resolve all of[] 
+ []
+
+
+Overfull \hbox (58.12056pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 this reader’s concerns with the paper, however, as noted
+ below, it seems a better fit with[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The GUI innovation described in the paper is intended to s
+olve the problem of providing[] 
+ []
+
+
+Overfull \hbox (58.12056pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 technical access to complex large data sets, though it doe
+sn’t address how students can be[] 
+ []
+
+
+Overfull \hbox (52.38278pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 using the tool to think about the larger data set and what
+ it’s saying. The authors state[] 
+ []
+
+
+Overfull \hbox (63.85835pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 (p.1, ¶2) that “Even when only partial information from
+ the database would be sufficient,[] 
+ []
+
+
+Overfull \hbox (17.95612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 there is often no, or at least no easy way for sub-setting
+ or aggregating the data at[] 
+ []
+
+
+Overfull \hbox (63.85834pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 particular levels.” This seems to be the core of the pro
+blem they are addressing, but it is[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 database, and provide specific steps for doing so. They wa
+lk the reader through use of the[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 dialogs and tabs that make up the GUI. They don’t descri
+be how to set up the GUI for use[] 
+ []
+
+
+Overfull \hbox (40.90723pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 with other data sets (though presumably it’s designed fo
+r flexible use), and especially[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 how to make links among conceptually related databases tha
+t were not collected together.[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 Though the authors describe their innovation sufficiently 
+well, it is not clear how this[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 example of a query tool is particularly innovative. It all
+ows for searches of subsets of[] 
+ []
+
+
+Overfull \hbox (115.49837pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 variables linked by Boolean “AND” and “OR” operato
+rs – it’s not clear if there is also a[] 
+ []
+
+
+Overfull \hbox (69.59613pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 “NOT” operator to exclude specific classes or cases. I
+t allows users to limit the size of[] 
+ []
+
+
+Overfull \hbox (86.80945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the result set (but it’s not clear if this is the first 
+N items matching the query, or a random[] 
+ []
+
+
+Overfull \hbox (40.90723pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 subset, or something else.) It then translates the search 
+options entered using drop-down[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 menus and numerical input into SQL syntax. On one hand, it
+ seems the intention is to use[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the more intuitive interface to help students learn to wri
+te SQL syntax directly, though[] 
+ []
+
+[16]
+Overfull \hbox (12.21834pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the display of the syntax is limited to a single line (pre
+sumably scrollable) which,[] 
+ []
+
+
+Overfull \hbox (40.90723pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 however, de-emphasizes the importance of this aspect of th
+e tool. That is, if the purpose[] 
+ []
+
+
+Overfull \hbox (63.85834pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 of the GUI is to learn SQL, it’s not clear that it’s d
+esigned very well as a teaching and[] 
+ []
+
+
+Overfull \hbox (63.85834pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The authors state four Learning Objectives for the tool. I
+t clearly facilitates #2, Obtaining[] 
+ []
+
+
+Overfull \hbox (52.38278pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 access to data stored in databases; and #4, Providing a ge
+ntle introduction to SQL. It does[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 allow #3, Searching and extracting specific data records o
+f interest, but doesn’t really[] 
+ []
+
+
+Overfull \hbox (17.95612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 support readers/ users to think well about what might be i
+nteresting, or how to frame[] 
+ []
+
+
+Overfull \hbox (52.38278pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 questions in large complex data sets. And it’s not at al
+l clear how the tool accomplishes[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 Objective #1, Familiarizing students with databases and ex
+ploring the utility of databases[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 for efficient data storage beyond merely working with a da
+tabase — the GUI doesn’t[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The authors’ implicit instructional (and research) appro
+ach seems to be very procedural,[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 and this undermines the possibility of true exploration an
+d supporting deeper conceptual[] 
+ []
+
+
+Overfull \hbox (23.69391pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 understanding. For example, just above heading 4, they say
+ “instructors can provide[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 students with the final sample size of the desired data su
+bset or subset related summary[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 statistics to verify whether students submitted the correc
+t SQL query.” Is the goal just[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 getting the answer the instructor was looking for? Are the
+re things that students could[] 
+ []
+
+
+Overfull \hbox (17.95612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 learn about sample size, or relationships among variables,
+ by exploring more on their[] 
+ []
+
+
+Overfull \hbox (12.21834pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 One good aspect of the paper is that they actually test an
+d report the results of an[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 empirical study of usability by a mix of undergraduate and
+ graduate statistics students[] 
+ []
+
+
+Overfull \hbox (6.48056pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 rather than just making a claim about their GUI without an
+y evidence to support it.[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 However, there are also weaknesses in the usability study 
+and the report on the study.[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The authors claim that the study assessed student understa
+nding, but there’s no real[] 
+ []
+
+
+Overfull \hbox (58.12056pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 evidence of this beyond performing correctly – e.g., the
+re were no interviews or openended[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 thought was going on with the GUI, their impressions of wh
+at works well about it and/ or[] 
+ []
+
+
+Overfull \hbox (0.74278pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 what’s confusing and could be improved. Looking through 
+the questions in Table 2[] 
+ []
+
+
+Overfull \hbox (58.12056pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 confirms this reader’s sense about the limited claims th
+at should be made from this study:[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the first 3 questions are about reading information from t
+he GUI correctly; the next 4 are[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 about reading more than one piece of information and compa
+ring them; and the last 3 (the[] 
+ []
+
+
+Overfull \hbox (69.59612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 table is missing #8) are about following instructions with
+ a bit of interpretation – but not[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 about actually understanding SQL. (I’m also confused abo
+ut how more undergrads could[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The paper doesn’t report on how errors were coded (inclu
+ding some examples so we can[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 understand your scheme would help) and this seems essentia
+l for us to make sense of the[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 Many of the findings are reported in the form of graphs th
+at are essentially unreadable[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 because the type size is outrageously too small — I can 
+just barely read these if I view[] 
+ []
+
+
+Overfull \hbox (17.95612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 them at 200%; 400% makes them easily readable, but then th
+e graphs only barely fit on[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 my screen. Furthermore, the graphs don’t have a consiste
+nt scale so they seem to suggest[] 
+ []
+
+
+Overfull \hbox (40.90723pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the same proportions of students get each question correct
+ when there are, in fact, large[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 While the graphs show undergraduate and graduate responses
+ in different colors, it’s not[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 clear if there are differences between these groups on any
+ of these ratings – did you[] 
+ []
+
+
+Overfull \hbox (75.3339pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 conduct a statistical test (if so, report it). And I’m s
+keptical about the one difference you[] 
+ []
+
+
+Overfull \hbox (46.64502pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 do report, that “graduate students show a more clear und
+erstanding of the importance of[] 
+ []
+
+
+Overfull \hbox (17.95612pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 database knowledge as compared to the undergraduate studen
+ts.” To me, what you’re[] 
+ []
+
+
+Overfull \hbox (40.90723pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 noting is that graduates agree with you about the importan
+ce of this, but we don’t know[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 anything about their understanding, and we don’t know if
+ they’re agreeing because of[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 your GUI or other experiences or cultural expectations, et
+c. While it does seem from the[] 
+ []
+
+
+Overfull \hbox (86.80945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 graphs that there’s a pre- post- difference in students�
+�� assessment of the difficult of doing[] 
+ []
+
+
+Overfull \hbox (40.90723pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 the SQL task, again this finding would benefit from a more
+ rigorous analysis/ statistical[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 The suggested next steps about joining data across several
+ tables, allowing stratified[] 
+ []
+
+
+Overfull \hbox (75.3339pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 Finally, there are a number of errors in the copy – miss
+ing words, wrong words, misspellings,[] 
+ []
+
+
+Overfull \hbox (29.43167pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 In general, the GUI only addresses one small aspect of pro
+blems associated with working[] 
+ []
+
+
+Overfull \hbox (52.38278pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 with large complex data sets, and doesn’t seem a very in
+novative approach to doing so. If[] 
+ []
+
+
+Overfull \hbox (46.645pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 its primary goal is to teach potential data analysts how t
+o construct SQL queries, it does[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 that a bit more effectively, but could be improved by prov
+iding a larger window in which[] 
+ []
+
+
+Overfull \hbox (23.6939pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 to review the generated SQL query all at once, or by provi
+ding real-time links between[] 
+ []
+
+
+Overfull \hbox (35.16945pt too wide) in paragraph at lines 638--638
+[]\T1/aett/m/n/10.95 changes in the interactive GUI parameters and the query te
+xt. As it currently stands, it[] 
+ []
+
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+(C:\Users\dasonk\Random-Other\paper\TISEpaper.bbl [20]
 Underfull \hbox (badness 1132) in paragraph at lines 71--74
 []\T1/aer/m/n/10.95 Sunlight Labs (2010).  \T1/aer/m/it/10.95 De-sign for Amer-
 ica\T1/aer/m/n/10.95 .  URL [][]$\T1/aett/m/n/10.95 http : / / sunlightlabs . c
 om / contests /$
  []
 
-[12])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 676.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 676.
  (C:\Users\dasonk\Random-Other\paper\TISEpaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 676.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 676.
 Package rerunfilecheck Info: File `TISEpaper.out' has not changed.
-(rerunfilecheck)             Checksum: FB30812500990D5BF82BEBD4A56C35ED;798.
+(rerunfilecheck)             Checksum: 192BCB3A4E2387C822EBBE03397803DB;1107.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7361 strings out of 494045
- 104219 string characters out of 3148383
- 192548 words of memory out of 3000000
- 10426 multiletter control sequences out of 15000+200000
+ 7381 strings out of 494045
+ 104546 string characters out of 3148383
+ 201073 words of memory out of 3000000
+ 10430 multiletter control sequences out of 15000+200000
  32904 words of font info for 75 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,10n,34p,2164b,440s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,10n,34p,2164b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
@@ -600,9 +1128,9 @@ s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb>
-Output written on TISEpaper.pdf (13 pages, 1238730 bytes).
+Output written on TISEpaper.pdf (21 pages, 1273866 bytes).
 PDF statistics:
- 1034 PDF objects out of 1200 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1091 PDF objects out of 1200 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
