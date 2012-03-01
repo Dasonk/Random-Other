@@ -11,6 +11,7 @@
 \usepackage{booktabs}
 \newcommand{\red}[1]{{\color{red} #1}}
 \newcommand{\blue}[1]{{\color{blue} #1}}
+\usepackage{pdfpages}
 
 \graphicspath{{images/}}
 
@@ -334,10 +335,22 @@ Once the GUI also supports random sampling, it can also be used as a data resour
 
 We introduced the idea of a graphical user interface that allows an introduction of data sets into classroom that otherwise are too large in size to be managed by commonly used statistical software. We explained some of the technical and pedagogical aspects of the GUI and an extension of the GUI is currently under development. Although the GUI has been used successfully in the classroom a full implementation and evaluation of the GUI is still necessary and currently being prepared.
 
-\section{{Reviews}}
 
-\subsection{{Review 1}}
+\section{{Future Work}}
+
+The GUI as it is provides basic subsetting functionality which is a good start to introducing students to the SQL language.  The usability study provides evidence that the GUI was helpful in facilitating a new user's ability to learn and SQL and access databases (at least in a minimal way that functionality was provided for).  It is planned to add the ability to grab random samples from the database with the possibility of stratifying or selecting the random sample based on some subsampling criterion.  This will allow instructors to easily grab a different dataset for each student to create customized assignments or projects.  If an instructor combined the ability to grab nice random stratified subsets of a large database with a tool like Sweave or knitr \citet{knitr} the creation of customized assignments would be an accomplishable task.
+
+One of the main reasons to put databases in normal form \citet{normalform:1983} is to save space and provide the ability to grab only the relevent information.  However, this breaks up the data so that not all the interesting information about an observation is in one row of a database.  To get the data back into this form it would be required to perform a 'join' on different tables in the database.  This functionality is not yet part of the GUI and would be a most welcome addition.  This is being worked on and would require a more advanced layout and it is not trivial to make it easy to perform a join for a new user.  For the sake of introducing databases and SQL it was decided that not having this functionality was fine, however, for a more advanced user this is a desired feature.
+
+\newpage
+\bibliography{references}
+\newpage
+\section{Appendix}
+
+\subsection{Review1}
+
 \begin{verbatim}
+View Review
 
 Review by: Reviewer #1
 
@@ -525,154 +538,14 @@ not sure the questions asked of the students do tell us about the effectiveness
 of the mode of pedagogy, i.e. the GUI.
 \end{verbatim}
 
-\subsection{{Review 2}}
-\begin{verbatim}
-Review of
-Introducing Very Large Data Sets into the Classroom:
-A Graphical User Interface for Teaching with Databases
-The paper raises an important issue – that while interesting and increasingly available, the
-complexity and sometimes sheer size of large data sets makes them difficult to deal with
-both technically (because of potential computational breakdowns) and conceptually
-(because of the number of variables, often mashed or linked in smaller tables).
-Unfortunately, rather than pursuing the implications of how to deal with such data sets
-broadly, the paper focuses on the very narrow solution of extracting samples from large
-data sets to address computational (but not conceptual) complexity, and then explores a
-specific graphical user interface for doing so. In quickly moving to the GUI “solution”,
-the paper loses sight of the much more interesting larger issues, and presents itself more
-as a research report on a small technical innovation rather than as a position paper. As
-such, many of the guiding questions suggested for review of a position paper are not
-relevant.
-After correspondence with the TISE editor, we’ve decided to review the paper as a
-Technology Innovation rather than as a Position Paper. Though this doesn’t resolve all of
-this reader’s concerns with the paper, however, as noted below, it seems a better fit with
-the goals and approach of the paper.
-The GUI innovation described in the paper is intended to solve the problem of providing
-technical access to complex large data sets, though it doesn’t address how students can be
-using the tool to think about the larger data set and what it’s saying. The authors state
-(p.1, ¶2) that “Even when only partial information from the database would be sufficient,
-there is often no, or at least no easy way for sub-setting or aggregating the data at
-particular levels.” This seems to be the core of the problem they are addressing, but it is
-only partially addressed with their GUI.
-The authors describe the components of the R packages used to access the off-site
-database, and provide specific steps for doing so. They walk the reader through use of the
-dialogs and tabs that make up the GUI. They don’t describe how to set up the GUI for use
-with other data sets (though presumably it’s designed for flexible use), and especially
-how to make links among conceptually related databases that were not collected together.
-Such descriptions would increase the utility of the paper.
-Though the authors describe their innovation sufficiently well, it is not clear how this
-example of a query tool is particularly innovative. It allows for searches of subsets of
-variables linked by Boolean “AND” and “OR” operators – it’s not clear if there is also a
-“NOT” operator to exclude specific classes or cases. It allows users to limit the size of
-the result set (but it’s not clear if this is the first N items matching the query, or a random
-subset, or something else.) It then translates the search options entered using drop-down
-menus and numerical input into SQL syntax. On one hand, it seems the intention is to use
-the more intuitive interface to help students learn to write SQL syntax directly, though
-the display of the syntax is limited to a single line (presumably scrollable) which,
-however, de-emphasizes the importance of this aspect of the tool. That is, if the purpose
-of the GUI is to learn SQL, it’s not clear that it’s designed very well as a teaching and
-learning tool.
-The authors state four Learning Objectives for the tool. It clearly facilitates #2, Obtaining
-access to data stored in databases; and #4, Providing a gentle introduction to SQL. It does
-allow #3, Searching and extracting specific data records of interest, but doesn’t really
-support readers/ users to think well about what might be interesting, or how to frame
-questions in large complex data sets. And it’s not at all clear how the tool accomplishes
-Objective #1, Familiarizing students with databases and exploring the utility of databases
-for efficient data storage beyond merely working with a database — the GUI doesn’t
-seem to address any back-end issues let alone explore different possibilities for
-structuring data.
-The authors’ implicit instructional (and research) approach seems to be very procedural,
-and this undermines the possibility of true exploration and supporting deeper conceptual
-understanding. For example, just above heading 4, they say “instructors can provide
-students with the final sample size of the desired data subset or subset related summary
-statistics to verify whether students submitted the correct SQL query.” Is the goal just
-getting the answer the instructor was looking for? Are there things that students could
-learn about sample size, or relationships among variables, by exploring more on their
-own? These are not pursued.
-One good aspect of the paper is that they actually test and report the results of an
-empirical study of usability by a mix of undergraduate and graduate statistics students
-rather than just making a claim about their GUI without any evidence to support it.
-However, there are also weaknesses in the usability study and the report on the study.
-The authors claim that the study assessed student understanding, but there’s no real
-evidence of this beyond performing correctly – e.g., there were no interviews or openended
-feedback sections of the study to actually check with students about what they
-thought was going on with the GUI, their impressions of what works well about it and/ or
-what’s confusing and could be improved. Looking through the questions in Table 2
-confirms this reader’s sense about the limited claims that should be made from this study:
-the first 3 questions are about reading information from the GUI correctly; the next 4 are
-about reading more than one piece of information and comparing them; and the last 3 (the
-table is missing #8) are about following instructions with a bit of interpretation – but not
-about actually understanding SQL. (I’m also confused about how more undergrads could
-have gotten #11 correct than #10, since #11 depends on #10.)
-The paper doesn’t report on how errors were coded (including some examples so we can
-understand your scheme would help) and this seems essential for us to make sense of the
-findings and what they mean.
-Many of the findings are reported in the form of graphs that are essentially unreadable
-because the type size is outrageously too small — I can just barely read these if I view
-them at 200%; 400% makes them easily readable, but then the graphs only barely fit on
-my screen. Furthermore, the graphs don’t have a consistent scale so they seem to suggest
-the same proportions of students get each question correct when there are, in fact, large
-differences between them.
-While the graphs show undergraduate and graduate responses in different colors, it’s not
-clear if there are differences between these groups on any of these ratings – did you
-conduct a statistical test (if so, report it). And I’m skeptical about the one difference you
-do report, that “graduate students show a more clear understanding of the importance of
-database knowledge as compared to the undergraduate students.” To me, what you’re
-noting is that graduates agree with you about the importance of this, but we don’t know
-anything about their understanding, and we don’t know if they’re agreeing because of
-your GUI or other experiences or cultural expectations, etc. While it does seem from the
-graphs that there’s a pre- post- difference in students’ assessment of the difficult of doing
-the SQL task, again this finding would benefit from a more rigorous analysis/ statistical
-test.
-The suggested next steps about joining data across several tables, allowing stratified
-sampling, and allowing random sampling sound like important and good directions.
-Finally, there are a number of errors in the copy – missing words, wrong words, misspellings,
-etc. I would include specifics, but I believe this paper needs a more thorough
-revision before it could be published, so such copy-edits seem premature.
-In general, the GUI only addresses one small aspect of problems associated with working
-with large complex data sets, and doesn’t seem a very innovative approach to doing so. If
-its primary goal is to teach potential data analysts how to construct SQL queries, it does
-that a bit more effectively, but could be improved by providing a larger window in which
-to review the generated SQL query all at once, or by providing real-time links between
-changes in the interactive GUI parameters and the query text. As it currently stands, it
-doesn’t seem very compelling.
-\end{verbatim}
-
-\subsection{{Responses}}
-Review 1:
--	The reviewer says they would be happy to re-review if the authors can make a compelling argument for the pedagogical benefits of the approach and make the GUI significantly more general.
-o	We agree that the GUI could be more general and the plan is to add functionality.  However, as it is we still believe the GUI is a valuable tool for those first learning SQL.  For some a GUI is much more natural and can ease the user into learning a language.  Pedagogically the GUI helps the user learn the language while simulataneously allowing them to get queries from a database showing what SQL can be capable of.  Adding JOIN statements to the GUI is a plan and will increase the use of the GUI but those are for more advanced users than the target audience.  Somebody who is more comfortable with a GUI might only be interested in learning how to get certain data of interest off of a database that might be inaccessible to them due to being ‘hidden’ by SQL.
--	The reviewer says ‘I don’t think the students need or are well served by a GUI, specifically this GUI’
-o	Some students don’t like GUIs and that is fine.  R is a big step for some students and learning it can take time.  SQL is another language for the user to learn and is quite powerful.  For some users it is beneficial to be able to see the results in the form of a GUI and to be able to organize their queries through the use of a GUI.  The code is generated for them so they can see what is happening under the surface and so that the user can learn the SQL commands while they actually get to see what they do in a more intuitive format.
--	“There are other GUIs, mostly commercial and professional, for interacting with databases and constructing queries via visual programming languages.  The GUI described here is quite limited and intended for pedagogical use. As a result, the students are very, very unlikely to use this GUI in “real-life”.
-o	Great! As stated the GUI is useful for pedagogical purposes and the goal is to introduce the user to SQL and get them to learn the language and understand its power.  The reviewer doesn’t believe we accomplish that goal but we disagree.   Currently the GUI is limited to the essentials that we want the user to be able to do to access the data of interest.
--	“Furthermore, on page 3, the paper describes how to install and run the GUI using R commands. So the students do need to be able to use the R command-line. All of this indicates that there is some confusion in the pedagogical thinking and framework of the authors.”
-o	It’s not really possible to install the GUI without going through these steps.  It’s a fairly simple process to get it installed and we believe the user can copy and paste some code if they need to.  If the user is already familiar with R but not with SQL then this isn’t a problem.  There are a lot of students that get introduced to R in stats courses but never touch SQL.  They might not even be very comfortable with R and appreciate a more intuitive interface – this is a group of students we’re looking to help.  
--	The reviewer mentions that they teach SQL in their undergraduate stats computing courses.
-o	That is great! They might not have a use for our GUI (but we still think they could use it and get something out of it).  Not all institutions are graced with students with that ability or with curriculums that allow such flexibility – A GUI could be a reasonable alternative for such institutions.
--	This reviewer clearly has a bias against GUIs
-o	I’m not a huge fan of GUIs in general settings either.  But command line stuff takes a while to learn.  Our GUI facilitates the learning process by intuitively allowing the user to deal with databases and see the commands that are used to generate them.  A user can see an example of what the database looks like through the “Line Viewer” and can see that there are different tables that can be accessed.  Just because a reviewer dislikes GUIs in general isn’t a reason to shoot one down that can be useful.
--	“Either they know how to use R and don't need the GUI (and use some R language mechanisms to access the database transparently) or they need the GUI and so cannot be expected to use R in which case the GUI should do a great deal more.”
-o	Once again the reviewer fails to consider a portion of the target audience – those that maybe be comfortable with R but don’t know SQL.  Some aren’t as comfortable with the command line as the reviewer clearly is and appreciate the guidance that a GUI gives.
--	The reviewer certainly makes some good points and some helpful suggestions but we feel strongly that it was harsher than necessary.
--	The reviewer glosses over the student evaluations.  The review was quite clearly technical while avoiding the pedagogical nature of the GUI.
-
-Review 2:
--	After correspondence with the TISE editor, we’ve decided to review the paper as a Technology Innovation rather than as a Position Paper.
-o	We submitted it as a Technology Innovation so I don’t’ know what the reviewer is going on about here.
--	While the graphs show undergraduate and graduate responses in different colors, it’s not clear if there are differences between these groups on any of these ratings – did you conduct a statistical test (if so, report it).
-o	This isn’t too much of interest and since this was not a random sample we can merely present the descriptive statistics.  One could make an argument for conducting a formal test for differences but there wouldn’t be too much point in our situation.
--	If its primary goal is to teach potential data analysts how to construct SQL queries, it does that a bit more effectively, but could be improved by providing a larger window in which to review the generated SQL query all at once, or by providing real-time links between changes in the interactive GUI parameters and the query text.
-o	This was one of the main goals and the reviewer’s suggestions are appreciated.
+\subsection{Response to Review 1}
 
 
-\section{{Future Work}}
 
-The GUI as it is provides basic subsetting functionality which is a good start to introducing students to the SQL language.  The usability study provides evidence that the GUI was helpful in facilitating a new user's ability to learn and SQL and access databases (at least in a minimal way that functionality was provided for).  It is planned to add the ability to grab random samples from the database with the possibility of stratifying or selecting the random sample based on some subsampling criterion.  This will allow instructors to easily grab a different dataset for each student to create customized assignments or projects.  If an instructor combined the ability to grab nice random stratified subsets of a large database with a tool like Sweave or knitr \citet{knitr} the creation of customized assignments would be an accomplishable task.
+\subsection{Review2}
 
-One of the main reasons to put databases in normal form \citet{normalform:1983} is to save space and provide the ability to grab only the relevent information.  However, this breaks up the data so that not all the interesting information about an observation is in one row of a database.  To get the data back into this form it would be required to perform a 'join' on different tables in the database.  This functionality is not yet part of the GUI and would be a most welcome addition.  This is being worked on and would require a more advanced layout and it is not trivial to make it easy to perform a join for a new user.  For the sake of introducing databases and SQL it was decided that not having this functionality was fine, however, for a more advanced user this is a desired feature.
+\includepdf[pages=-, fitpaper=true]{./Reviews1/review2.pdf}
 
-%\newpage
-\bibliography{references}
 \end{document}
 
 
