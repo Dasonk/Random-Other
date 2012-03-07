@@ -9,7 +9,7 @@
 @Manual{topten,
   author="{Focus Editors}",
   title={10 Largest Databases in the World.},
-  year={2010},
+  year={2012},
   url = "http://www.focus.com/fyi/operations/10-largest-databases-in-the-world/"
 }
 
@@ -25,13 +25,6 @@
   title={MySQL tools},
   url = "http://www.mysql.com",
   year={2010},
-}
-
-@Manual{mysqlworkbench,
-  author={MySQL},
-  title={MySQL Workbench},
-  url = {http://www.mysql.com/products/workbench/},
-  year={2012},
 }
 
 
@@ -55,8 +48,8 @@
   title = {RMySQL: R interface to the MySQL database},
   author = {David A. James and Saikat DebRoy},
   year = {2010},
-  note = {R package version 0.8-0},
-  url = {http://biostat.mc.vanderbilt.edu/RMySQL},
+  note = {R package version 0.7-5},
+  url = {http://CRAN.R-project.org/package=RMySQL},
 }
 
 @Manual{rodbc,
@@ -79,12 +72,9 @@
 
 @article{dataexpo,
 	author={Hadley Wickham},
-	year={2011},
+	year={forthcoming},
 	title={ASA Data Exposition 2009},
 	journal={Journal of Computational and Graphical Statistics},
-	volume=20,
-	number=2,
-	pages={281-283},
 }
 
 @Manual{knitr,
@@ -100,50 +90,44 @@
   title = {ASA Data Exposition 2009},
   author = {Hadley Wickham},
   year = {2009},
-  url = {http://stat-computing.org/dataexpo/},	
+  url = {http://stat- 
+computing.org/dataexpo/},	
 }
 
 @Manual{wunderground,
-  author={Weather Underground, Inc},
+  author="{Weather Underground, Inc}",
   title={Historical Weather Records},
-  url = {http://www.wunderground.com/},
+  url = "http://www.wunderground.com/",
   location={Ann Arbor, MI},
   year={2009},
 }
 
 @Manual{arra,
-  author={Graphics Working Group -- Iowa State Statistics},
-  title=Making a Full Recovery},
-  url = {http://www.stat.iastate.edu/DesignForAmerica/Recovery/},
+  author="{Graphics Working Group -- Iowa State Statistics}",
+  title="Making a Full Recovery",
+  url = "http://www.stat.iastate.edu/DesignForAmerica/Recovery/",
   location={Ames, IA},
   year={2010},
 }
 
 @Manual{designforamerica,
-  author={Sunlight Labs},
-  title={Design for America},
-  url = {http://sunlightlabs.com/contests/designforamerica/},
+  author="{Sunlight Labs}",
+  title="Design for America",
+  url = "http://sunlightlabs.com/contests/designforamerica/",
   year={2010},
 }
 
 @Manual{faa,
-  author={Federal Aviation Administration (FAA)},
-  title={Aviation Data and Statistics},
-  url={http://www.faa.gov/data_research/aviation_data_statistics/},
+  author="{Federal Aviation Administration (FAA)}",
+  title="Aviation Data and Statistics",
+  url="http://www.faa.gov/data_research/aviation_data_statistics/",
   year={2010},
 }
 
 
 @Manual{noaa,
-author={National Climatic Data Center (NCDC)},
-title={Digital Data Files},
-url={http://www.ncdc.noaa.gov/oa/ncdc.html},
-year={2010},
-}
-
-@misc{saseg,
-author={SAS},
-title={SAS Enterprise Guide},
-url={http://www.sas.com/technologies/bi/query_reporting/guide/},
-year={2012},
+	author="{National Climatic Data Center (NCDC)}",
+	title={Digital Data Files},
+	url="http://www.ncdc.noaa.gov/oa/ncdc.html",
+	year=2010
 }

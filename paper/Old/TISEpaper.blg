@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: TISEpaper.aux
+The style file: jss.bst
+Database file #1: references.bib
+Warning--string name "making" is undefined
+--line 116 of file references.bib
+I was expecting a `,' or a `}'---line 116 of file references.bib
+ :   title=making 
+ :                a Full Recovery},
+I'm skipping whatever remains of this entry
+Warning--empty year in arra; set to ????
+Warning--empty title in arra
+(There was 1 error message)

@@ -1,0 +1,112 @@
+\begin{thebibliography}{18}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Bell \emph{et~al.}(2009)Bell, Bennett, Koren, and
+  Volinsky}]{netflix:2009}
+Bell R, Bennett J, Koren Y, Volinsky C (2009).
+\newblock \enquote{The Million Dollar Programming Prize.}
+\newblock \emph{IEEE Spectrum}, pp. 28--33.
+
+\bibitem[{(FAA)(2010)}]{faa}
+(FAA) FAA (2010).
+\newblock \emph{Aviation Data and Statistics}.
+\newblock
+  \urlprefix\url{http://www.faa.gov/data_research/aviation_data_statistics/}.
+
+\bibitem[{{Focus Editors}(2010)}]{topten}
+{Focus Editors} (2010).
+\newblock \emph{10 Largest Databases in the World.}
+\newblock
+  \urlprefix\url{http://www.focus.com/fyi/operations/10-largest-databases-in-the-world/}.
+
+\bibitem[{James and DebRoy(2010)}]{rmysql}
+James DA, DebRoy S (2010).
+\newblock \emph{RMySQL: R interface to the MySQL database}.
+\newblock R package version 0.8-0,
+  \urlprefix\url{http://biostat.mc.vanderbilt.edu/RMySQL}.
+
+\bibitem[{Kent(1983)}]{normalform:1983}
+Kent W (1983).
+\newblock \enquote{A simple guide to five normal forms in relational database
+  theory.}
+\newblock \emph{Communications of the ACM}, \textbf{26}(2), 120--125.
+
+\bibitem[{Labs(2010)}]{designforamerica}
+Labs S (2010).
+\newblock \emph{Design for America}.
+\newblock \urlprefix\url{http://sunlightlabs.com/contests/designforamerica/}.
+
+\bibitem[{MySQL(2010)}]{mysql}
+MySQL (2010).
+\newblock \emph{MySQL tools}.
+\newblock \urlprefix\url{http://www.mysql.com}.
+
+\bibitem[{MySQL(2012)}]{mysqlworkbench}
+MySQL (2012).
+\newblock \emph{MySQL Workbench}.
+\newblock \urlprefix\url{http://www.mysql.com/products/workbench/}.
+
+\bibitem[{(NCDC)(2010)}]{noaa}
+(NCDC) NCDC (2010).
+\newblock \emph{Digital Data Files}.
+\newblock \urlprefix\url{http://www.ncdc.noaa.gov/oa/ncdc.html}.
+
+\bibitem[{{R Special Interest Group on Databases}(2009)}]{dbi}
+{R Special Interest Group on Databases} (2009).
+\newblock \emph{{DBI: R Database Interface}}.
+\newblock R package version 0.2-5,
+  \urlprefix\url{http://CRAN.R-project.org/package=DBI}.
+
+\bibitem[{Ripley and from 1999~to Oct 2002 Michael~Lapsley(2012)}]{rodbc}
+Ripley B, from 1999~to Oct 2002 Michael~Lapsley (2012).
+\newblock \emph{RODBC: ODBC Database Access}.
+\newblock R package version 1.3-4,
+  \urlprefix\url{http://CRAN.R-project.org/package=RODBC}.
+
+\bibitem[{SAS(2012)}]{saseg}
+SAS (2012).
+\newblock \enquote{SAS Enterprise Guide.}
+\newblock
+  \urlprefix\url{http://www.sas.com/technologies/bi/query_reporting/guide/}.
+
+\bibitem[{Statistics()}]{arra}
+Statistics GWGIS (????).
+
+\bibitem[{Theus and Urbanek(2008)}]{theus:2008}
+Theus M, Urbanek S (2008).
+\newblock \emph{Interactive graphics for data analysis: Principles and
+  examples.}
+\newblock Chapman \& Hall, London.
+
+\bibitem[{Weather~Underground(2009)}]{wunderground}
+Weather~Underground I (2009).
+\newblock \emph{Historical Weather Records}.
+\newblock \urlprefix\url{http://www.wunderground.com/}.
+
+\bibitem[{Wickham(2009)}]{dataexpourl}
+Wickham H (2009).
+\newblock \emph{ASA Data Exposition 2009}.
+\newblock \urlprefix\url{http://stat-computing.org/dataexpo/}.
+
+\bibitem[{Wickham(2011)}]{dataexpo}
+Wickham H (2011).
+\newblock \enquote{ASA Data Exposition 2009.}
+\newblock \emph{Journal of Computational and Graphical Statistics},
+  \textbf{20}(2), 281--283.
+
+\bibitem[{Xie(2012)}]{knitr}
+Xie Y (2012).
+\newblock \emph{knitr: A general-purpose package for dynamic report generation
+  in R}.
+\newblock R package version 0.2,
+  \urlprefix\url{http://CRAN.R-project.org/package=knitr}.
+
+\end{thebibliography}

@@ -1,0 +1,18 @@
+\frametitle{dbConnectGUI}
+  \framesubtitle{Installation}
+
+\begin{verbatim}
+# install.packages("gWidgetsRGtk2")
+# install.packages("DBI")
+# install.packages("RMySQL")
+
+install.packages("dbConnectGUI")
+library(dbConnectGUI)
+# Try it out
+dbConnectGUI()
+# Or
+connect <- getConnection()
+dbConnectGUI(connect$con)
+\end{verbatim}
+
+
